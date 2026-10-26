@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, serif;
+    margin: 40px;
+}
+
+input,
+select,
+textarea {
+    width: 300px;
+    padding: 8px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    padding: 10px 20px;
+}
