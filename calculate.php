@@ -43,6 +43,14 @@ if ($zone == "ua") {
 
 $total = $priceAfterDiscount + $checkPrice;
 
+saveHistory(
+        $domain,
+        $years,
+        $zone,
+        $startDate,
+        $comment,
+        $total
+);
 ?>
 
 <!DOCTYPE html>
