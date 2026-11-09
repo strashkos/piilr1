@@ -3,7 +3,10 @@
  * @var array<string, string> $old
  * @var array<string, string> $errors
  * @var array<string, int> $zoneRates
- * @var array<string, mixed>|null $created
+ * @var bool $created
+ * @var array<int, array<string, mixed>> $history
+ * @var string $zoneFilter
+ * @var int $historyLimit
  */
 ?>
 <!DOCTYPE html>
@@ -17,10 +20,8 @@
 
 <h1>Реєстрація доменного імені</h1>
 
-<?php if ($created !== null): ?>
-    <p class="success">
-        Заявку прийнято: <?= e($created['domain']) ?>, вартість <?= e($created['cost']) ?> грн.
-    </p>
+<?php if ($created): ?>
+    <p class="success">Заявку збережено.</p>
 <?php endif; ?>
 
 <form method="post" action="/">
@@ -73,6 +74,8 @@
 
     <button type="submit">Зберегти заявку</button>
 </form>
+
+<?php require __DIR__ . '/history.php'; ?>
 
 </body>
 </html>
