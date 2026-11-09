@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    max-width: 760px;
+}
+
+label {
+    display: block;
+    margin-top: 16px;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    width: 300px;
+    padding: 8px;
+    margin-top: 4px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+.error {
+    color: #b00020;
+    margin: 4px 0 0;
+}
+
+.success {
+    color: #1b5e20;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 12px;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.filters a {
+    margin-right: 10px;
+}

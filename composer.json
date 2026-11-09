@@ -1,0 +1,17 @@
+{
+    "name": "strashkos/piilr1",
+    "description": "Lab 01, variant 61: domain name registration",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "scripts": {
+        "serve": "php -S 127.0.0.1:8000 -t public"
+    }
+}
